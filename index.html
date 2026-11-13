@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#120909">
+  <meta name="description" content="Kabut Vape Store — informasi kategori produk, lokasi toko, dan kontak.">
+  <title>Kabut Vape Store — Ora Vaping Ora Gaul</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div class="age-overlay" id="ageGate" role="dialog" aria-modal="true" aria-labelledby="ageTitle">
+    <div class="age-card">
+      <div class="brand-mark">K<span>•</span></div>
+      <p class="eyebrow">SELAMAT DATANG DI</p>
+      <h2 id="ageTitle">Kabut Vape Store</h2>
+      <p>Konten ini hanya untuk pengunjung berusia 18 tahun ke atas. Produk tembakau dan nikotin memiliki risiko kesehatan dan menyebabkan ketergantungan.</p>
+      <div class="age-actions">
+        <button class="btn btn-primary" id="confirmAge">Saya berusia 18+</button>
+        <button class="btn btn-quiet" id="leaveAge">Saya belum 18</button>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#beranda" aria-label="Kabut Vape Store beranda"><span class="brand-symbol">K<span>•</span></span><span>KABUT<span class="brand-light">VAPE STORE</span></span></a>
+    <nav class="desktop-nav" aria-label="Navigasi utama">
+      <a class="nav-link active" href="#beranda">Beranda</a>
+      <a class="nav-link" href="#produk">Produk</a>
+      <a class="nav-link" href="#tentang">Tentang</a>
+      <a class="nav-link" href="#kontak">Kontak</a>
+    </nav>
+    <a class="header-cta" href="#kontak">Hubungi toko <span>↗</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section class="hero section-shell" id="beranda">
+      <div class="hero-copy">
+        <div class="status-pill"><span class="status-dot"></span> TOKO & INFORMASI PRODUK</div>
+        <p class="eyebrow">SELAMAT DATANG DI</p>
+        <h1>Kabut Vape Store<span class="red-dot">.</span><br><span class="headline-sub">Ora Vaping Ora Gaul.</span></h1>
+        <p class="hero-description">Temukan informasi kategori produk, jam operasional, dan cara menghubungi toko kami dalam satu tempat.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#produk">Jelajahi kategori <span>↘</span></a>
+          <a class="btn btn-outline" href="#kontak">Info toko</a>
+        </div>
+        <div class="hero-footnote"><span>18+</span> Khusus pengunjung dewasa. Patuhi peraturan yang berlaku.</div>
+      </div>
+      <div class="hero-art" aria-label="Ilustrasi abstrak merah dan hitam">
+        <div class="art-glow"></div><div class="art-ring ring-a"></div><div class="art-ring ring-b"></div>
+        <div class="art-panel">
+          <span class="art-kicker">KABUT / EST. STORE</span>
+          <div class="art-monogram">K<span>•</span></div>
+          <div class="art-bottom"><span>INDEPENDENT STORE</span><span>18+ ONLY</span></div>
+        </div>
+        <div class="floating-tag tag-top">QUALITY<br><b>INFORMATION</b></div>
+        <div class="floating-tag tag-bottom"><span class="mini-dot"></span> ORA VAPING ORA GAUL</div>
+      </div>
+    </section>
+
+    <section class="trust-strip section-shell" aria-label="Informasi singkat">
+      <div><span class="strip-icon">01</span><span><b>Informasi kategori</b><small>Kenali kategori yang tersedia</small></span></div>
+      <div><span class="strip-icon">02</span><span><b>Kontak langsung</b><small>Hubungi toko untuk bertanya</small></span></div>
+      <div><span class="strip-icon">03</span><span><b>Jam operasional</b><small>Cek jadwal sebelum berkunjung</small></span></div>
+    </section>
+
+    <section class="products-section section-shell" id="produk">
+      <div class="section-heading">
+        <div><p class="eyebrow">JELAJAHI KATEGORI</p><h2>Informasi <span>Produk.</span></h2></div>
+        <p class="section-intro">Pilih kategori untuk melihat ringkasan informasi. Ketersediaan dan detail dapat berubah.</p>
+      </div>
+      <div class="product-toolbar">
+        <label class="search-box"><span>⌕</span><input id="productSearch" type="search" placeholder="Cari kategori..." aria-label="Cari kategori produk"></label>
+        <div class="filter-tabs" role="group" aria-label="Filter kategori">
+          <button class="filter-btn selected" data-filter="all">Semua</button>
+          <button class="filter-btn" data-filter="device">Device</button>
+          <button class="filter-btn" data-filter="liquid">Liquid</button>
+          <button class="filter-btn" data-filter="aksesori">Aksesori</button>
+        </div>
+      </div>
+      <div class="product-grid" id="productGrid">
+        <article class="product-card" data-category="device" data-name="pod system">
+          <div class="product-visual visual-pod"><span class="visual-label">CATEGORY / 01</span><div class="device-shape pod-shape"></div><span class="visual-index">01</span></div>
+          <div class="product-info"><div class="card-meta"><span>DEVICE</span><span>01 — 04</span></div><h3>Pod System</h3><p>Informasi umum perangkat pod system dan karakteristik kategorinya.</p><button class="text-action detail-btn" data-title="Pod System" data-description="Kategori perangkat pod system. Untuk spesifikasi, kesesuaian, dan informasi ketersediaan, silakan hubungi toko secara langsung.">Lihat informasi <span>↗</span></button></div>
+        </article>
+        <article class="product-card" data-category="device" data-name="mod dan box">
+          <div class="product-visual visual-mod"><span class="visual-label">CATEGORY / 02</span><div class="device-shape mod-shape"></div><span class="visual-index">02</span></div>
+          <div class="product-info"><div class="card-meta"><span>DEVICE</span><span>02 — 04</span></div><h3>Mod dan Box</h3><p>Informasi kategori perangkat mod dan box untuk pengunjung dewasa.</p><button class="text-action detail-btn" data-title="Mod dan Box" data-description="Kategori perangkat mod dan box. Detail spesifikasi dan informasi produk dapat ditanyakan langsung kepada toko.">Lihat informasi <span>↗</span></button></div>
+        </article>
+        <article class="product-card" data-category="liquid" data-name="liquid freebase salt">
+          <div class="product-visual visual-liquid"><span class="visual-label">CATEGORY / 03</span><div class="bottle-shape"></div><span class="visual-index">03</span></div>
+          <div class="product-info"><div class="card-meta"><span>LIQUID</span><span>03 — 04</span></div><h3>Liquid Freebase & Salt</h3><p>Informasi kategori liquid. Produk nikotin dapat menyebabkan ketergantungan.</p><button class="text-action detail-btn" data-title="Liquid Freebase & Salt" data-description="Kategori liquid freebase dan salt. Produk yang mengandung nikotin memiliki risiko kesehatan dan dapat menyebabkan ketergantungan.">Lihat informasi <span>↗</span></button></div>
+        </article>
+        <article class="product-card" data-category="aksesori" data-name="aksesori suku cadang">
+          <div class="product-visual visual-accessory"><span class="visual-label">CATEGORY / 04</span><div class="accessory-shapes"><i></i><i></i><i></i></div><span class="visual-index">04</span></div>
+          <div class="product-info"><div class="card-meta"><span>AKSESORI</span><span>04 — 04</span></div><h3>Aksesori & Suku Cadang</h3><p>Informasi aksesori, komponen, dan suku cadang terkait perangkat.</p><button class="text-action detail-btn" data-title="Aksesori & Suku Cadang" data-description="Kategori aksesori dan suku cadang. Hubungi toko untuk menanyakan detail dan kecocokan komponen.">Lihat informasi <span>↗</span></button></div>
+        </article>
+      </div>
+      <p class="empty-state" id="emptyState" hidden>Kategori tidak ditemukan. Coba kata kunci lain.</p>
+      <p class="section-disclaimer">Informasi pada halaman ini bersifat umum. Bukan ajakan untuk menggunakan produk tembakau atau nikotin.</p>
+    </section>
+
+    <section class="store-section section-shell" id="tentang">
+      <div class="store-copy"><p class="eyebrow">KENALI KAMI</p><h2>Simple, jelas,<br><span>langsung ke inti.</span></h2><p>Kabut Vape Store menyediakan halaman informasi agar pengunjung dapat mengenali kategori, mengetahui jam operasional, dan menemukan kanal kontak toko dengan mudah.</p><a href="#kontak" class="text-action">Lihat informasi toko <span>↗</span></a></div>
+      <div class="store-stat-card"><div class="stat-top"><span class="brand-symbol">K<span>•</span></span><span class="stat-label">KABUT / STORE</span></div><div class="stat-number">18<span>+</span></div><h3>Konten khusus dewasa</h3><p>Akses dibatasi untuk pengunjung berusia 18 tahun ke atas.</p><div class="stat-line"></div><span class="stat-caption">RESPONSIBLE INFORMATION</span></div>
+    </section>
+
+    <section class="contact-section section-shell" id="kontak">
+      <div class="section-heading"><div><p class="eyebrow">KUNJUNGI / HUBUNGI</p><h2>Info <span>Toko.</span></h2></div><p class="section-intro">Perbarui alamat dan kontak di file konfigurasi agar pengunjung dapat menemukan toko dengan tepat.</p></div>
+      <div class="contact-grid">
+        <div class="contact-card address-card"><span class="contact-icon">⌖</span><p class="eyebrow">ALAMAT</p><h3>[ALAMAT TOKO]</h3><p>[PATOKAN / AREA LOKASI]</p><a class="text-action" href="#" id="mapLink">Buka peta <span>↗</span></a></div>
+        <div class="contact-card hours-card"><span class="contact-icon">◷</span><p class="eyebrow">JAM OPERASIONAL</p><div class="hours-row"><b>Senin–Jumat</b><span>10.00–21.00</span></div><div class="hours-row"><b>Sabtu</b><span>10.00–22.00</span></div><div class="hours-row"><b>Minggu</b><span>13.00–21.00</span></div></div>
+        <div class="contact-card social-card"><span class="contact-icon">↗</span><p class="eyebrow">KANAL KONTAK</p><h3>Terhubung dengan toko.</h3><p>Gunakan kanal resmi untuk pertanyaan mengenai informasi toko.</p><a class="btn btn-primary btn-wide" id="whatsappLink" href="#">WhatsApp toko <span>↗</span></a><a class="btn btn-outline btn-wide" id="instagramLink" href="#" target="_blank" rel="noreferrer">Instagram toko <span>↗</span></a></div>
+      </div>
+      <p class="health-note"><b>Catatan penting</b> — Produk tembakau dan nikotin bersifat adiktif serta memiliki risiko kesehatan. Jauhkan dari anak-anak dan ikuti ketentuan hukum yang berlaku. Tidak untuk orang di bawah 18 tahun.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell"><a class="brand" href="#beranda"><span class="brand-symbol">K<span>•</span></span><span>KABUT<span class="brand-light">VAPE STORE</span></span></a><span>© <span id="year"></span> Kabut Vape Store. Informasi untuk pengunjung dewasa.</span><a href="#beranda" class="back-top">Kembali ke atas ↑</a></footer>
+
+  <nav class="mobile-nav" aria-label="Navigasi mobile"><a class="mobile-link active" href="#beranda"><span>⌂</span>Beranda</a><a class="mobile-link" href="#produk"><span>▦</span>Produk</a><a class="mobile-link" href="#kontak"><span>⌖</span>Toko</a></nav>
+
+  <div class="modal" id="detailModal" aria-hidden="true"><div class="modal-backdrop" data-close></div><div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" data-close aria-label="Tutup">×</button><p class="eyebrow">INFORMASI KATEGORI</p><h2 id="modalTitle">Kategori</h2><p id="modalDescription"></p><button class="btn btn-primary" data-close>Tutup</button></div></div>
+  <script src="script.js"></script>
+</body>
+</html>
